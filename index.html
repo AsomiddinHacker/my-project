@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Instagram Login - Modern Design</title>
+</head>
+
+<body>
+  <!-- Mouse Tracker Light -->
+  <div class="mouse-tracker">
+    <div class="tracker-light"></div>
+    <div class="tracker-glow"></div>
+    <div class="tracker-particles"></div>
+  </div>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <div class="background-animation">
+    <div class="gradient-blob blob-1"></div>
+    <div class="gradient-blob blob-2"></div>
+    <div class="gradient-blob blob-3"></div>
+  </div>
+
+  <div class="container">
+    <div class="login-wrapper">
+      <div class="left-section">
+        <div class="brand-section">
+          <h1 class="brand-title">Instagram</h1>
+          <p class="brand-subtitle">Connect with friends and family</p>
+        </div>
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-content">
+            <i class="fas fa-image"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="login-container">
+          <div class="logo-wrapper">
+            <svg class="instagram-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Outer gradient circle -->
+              <defs>
+                <linearGradient id="instagramGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#f5576c;stop-opacity:1" />
+                  <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <!-- Background circle -->
+              <circle cx="12" cy="12" r="12" fill="url(#instagramGradient)" opacity="0.15" />
+              <!-- Instagram icon -->
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2M12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20M17 12.5C17.83 12.5 18.5 11.83 18.5 11C18.5 10.17 17.83 9.5 17 9.5C16.17 9.5 15.5 10.17 15.5 11C15.5 11.83 16.17 12.5 17 12.5M12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12C17 9.24 14.76 7 12 7M12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15Z"
+                fill="url(#instagramGradient)" />
+            </svg>
+          </div>
+
+          <form id="loginForm" class="login-form">
+            <div class="input-group">
+              <i class="fas fa-user"></i>
+              <input id="username" type="text" placeholder="Phone number, username, or email" required>
+            </div>
+
+            <div class="input-group">
+              <i class="fas fa-lock"></i>
+              <input id="password" type="password" placeholder="Password" required>
+              <button type="button" class="password-toggle" id="passwordToggle" aria-label="Toggle password visibility">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+
+            <button type="submit" class="btn-submit">Log In</button>
+          </form>
+
+          <div class="divider">
+            <span>OR</span>
+          </div>
+
+          <a href="https://www.facebook.com/login/" target="_blank" class="btn-facebook">
+            <i class="fab fa-facebook-f"></i>
+            Log in with Facebook
+          </a>
+
+          <div class="forgot-password">
+            <a href="https://www.instagram.com/accounts/password/reset/" target="_blank">Forgot password?</a>
+          </div>
+
+          <div class="signup-section">
+            <p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/" target="_blank"
+                class="signup-link">Sign up</a></p>
+          </div>
+        </div>
+
+        <div class="app-download">
+          <p>Get the app.</p>
+          <div class="download-buttons">
+            <a href="https://apps.apple.com/app/instagram/id389801252" target="_blank" class="download-btn">
+              <i class="fab fa-apple"></i>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank"
+              class="download-btn">
+              <i class="fab fa-google-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+<script src="./js/password-toggle.js"></script>
+
+</html>
