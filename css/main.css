@@ -1484,6 +1484,26 @@ body.dark-theme .btn-facebook {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .login-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .phone-mockup {
+    width: 240px;
+    height: 480px;
+  }
+
+  .phone-content {
+    font-size: 60px;
+  }
+
+  .phone-content i {
+    font-size: 60px;
+  }
+}
+
 @media (max-width: 768px) {
   .login-wrapper {
     grid-template-columns: 1fr;
@@ -1491,6 +1511,10 @@ body.dark-theme .btn-facebook {
   }
 
   .left-section {
+    text-align: center;
+  }
+
+  .phone-mockup {
     display: none;
   }
 
@@ -1500,10 +1524,6 @@ body.dark-theme .btn-facebook {
 
   .login-container {
     padding: 40px 30px;
-  }
-
-  .phone-mockup {
-    display: none;
   }
 
   .right-section {
